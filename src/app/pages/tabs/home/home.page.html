@@ -1,0 +1,25 @@
+
+
+<ion-content>
+
+  <app-header title="Task"></app-header>
+
+  <div class="content">
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let task of tasks" size-lg="6" size-md="6" size-sm="12" size="12">
+
+      <ion-card mode="ios">
+        <div class="title">{{task.title}}</div>
+        <p>{{task.description}}</p>
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  </div>
+
+</ion-content>
